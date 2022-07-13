@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/princeatoss/argogolang.git
     targetRevision: main
-    path: /golang
+    path: golang
   destination:
     server: https://kubernetes.default.svc
     namespace: argogolangyaml
