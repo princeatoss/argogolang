@@ -30,7 +30,7 @@ spec:
           - name: DATABASE_URL
             valueFrom:
               secretKeyRef:
-                key: url
+                key: test
                 name: db-secret
         readinessProbe:
           httpGet:
@@ -41,7 +41,7 @@ spec:
           failureThreshold: 1
         livenessProbe:
           httpGet:
-            path: /wrong
+            path: /
             port: 8081
           initialDelaySeconds: 0
           periodSeconds: 30
